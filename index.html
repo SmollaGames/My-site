@@ -5,38 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>Anton Savranskii | Home</title>
 </head>
 
 <body>
     <header>
         <div class="textLogo">
-            Anton Savranskii
+            ANTON SAVRANSKII
         </div>
 
-        <a href="">PORTFOLIO</a>
-        <a href="">MY GAMES</a>
-        <a href="">ABOUT ME</a>
+        <div class="links">
+            <a href="">PORTFOLIO</a>
+            <a href="">MY GAMES</a>
+            <a href="">ABOUT ME</a>
+        </div>
     </header>
 
     <section class="blockStart">
-        <h1>Junior+ Game Developer <span>& Courses Teacher</span></h1>
-        <img src="./src/image/My Photo.png" alt="">
+        <h1>Junior+ Game Developer<br>
+            <span>& Courses Teacher</span><br>
+        </h1>
     </section>
 
     <section class="blockFastBio">
         <div class="welcomeText">
             <h1>Welcome to my site 👋</h1>
-            <p>My name is Anton and I have been developing games since I was 16 years old.</p>
-            <p>I have a lot of commercial experience teaching VR games and running game development courses for kids
+            <p>My name is Anton and I have been developing games since I was 16 years old.<br><br>
+            I have a lot of commercial experience teaching VR games and running game development courses for kids
                 ages 5 to 16. On this site you will find out what projects I have done.
             </p>
         </div>
-        <h3 class="aboutComments">
-            At the bottom of the site comments about me :)
-        </h3>
+        <a class="aboutComments" href="#Comments">
+            <h3>
+                At the bottom of the site comments about me :)
+            </h3>
+        </a>
     </section>
 
     <section class="blockMainKnojess">
@@ -68,10 +77,10 @@
             </a>
         </div>
 
-        <a href="">MORE</a>
+        <a class="linkMore" href="">MORE</a>
     </section>
 
-    <section class="blockCommentBox">
+    <section class="blockCommentBox" id="Comments">
         <div class="commentbox"></div>
         <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
         <script>commentBox('5668936569847808-proj')</script>
