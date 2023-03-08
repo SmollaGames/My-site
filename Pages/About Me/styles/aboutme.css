@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111111;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    height: 75px;
+    padding: 0 350px 0 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111111;
+}
+
+.textLogo {
+    font-size: 36px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: .5s;
+}
+.textLogo:hover{
+    font-size: 42px;
+    transition: .5s;
+}
+
+.links {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links a {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    transition: .5s;
+}
+
+.links a:hover {
+    color: #abc3ff;
+    transition: .5s;
+}
+
+#burger-menu {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
+
+.portfolioBlock{
+    padding: 0 350px 0 350px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.portfolioBlock h1{
+    text-align: center;
+    margin-top: 100px;
+    color: #00B7FF;
+}
+
+.group{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.group a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 300px;
+    background: #D9D9D9;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 1615px) {
+    header {
+        padding: 0 100px 0 100px;
+    }
+    .portfolioBlock{
+        padding: 0 100px 0 100px;
+    }
+}
+
+@media only screen and (max-width: 1290px) {
+    header {
+        padding: 0 30px 0 30px;
+    }
+    .portfolioBlock{
+        padding: 0 30px 0 30px;
+    }
+    .group a{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    .links {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: 50px;
+    }
+
+    .textLogo {
+        font-size: 24px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .group a{
+        height: 150px;
+    }
+
+    #burger-menu {
+        display: block;
+        cursor: pointer;
+        height: 27px;
+        width: 27px;
+        margin: 50px 0 50px 0;
+        overflow: visible;
+        position: relative;
+        z-index: 2;
+    }
+
+    #burger-menu span,
+    #burger-menu span:before,
+    #burger-menu span:after {
+        background: #fff;
+        display: block;
+        height: 2px;
+        opacity: 1;
+        position: absolute;
+        transition: 0.3s ease-in-out;
+    }
+
+    #burger-menu span:before,
+    #burger-menu span:after {
+        content: "";
+    }
+
+    #burger-menu span:before {
+        left: 0px;
+        top: -10px;
+        width: 27px;
+    }
+
+    #burger-menu span {
+        right: 0px;
+        top: 13px;
+        width: 27px;
+    }
+
+    #burger-menu span:after {
+        left: 0px;
+        top: 10px;
+        width: 27px;
+    }
+
+    #burger-menu.close span:before {
+        top: 0px;
+        transform: rotate(90deg);
+        width: 27px;
+    }
+
+    #burger-menu.close span {
+        transform: rotate(-45deg);
+        top: 13px;
+        width: 27px;
+    }
+
+    #burger-menu.close span:after {
+        top: 0px;
+        left: 0;
+        transform: rotate(90deg);
+        opacity: 0;
+        width: 0;
+    }
+
+    #menu {
+        display: block;
+        z-index: 1;
+        min-width: 100%;
+        min-height: 100%;
+        position: fixed;
+        top: 0;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        text-align: center;
+        padding-top: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    #menu.overlay {
+        visibility: visible;
+        opacity: 1;
+        padding-top: 100px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #menu ul {
+        padding: 0;
+    }
+
+    #menu li {
+        list-style: none;
+    }
+
+    #menu a {
+        color: #fff;
+        display: block;
+        font-size: 32px;
+        margin-bottom: 30px;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .group a{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .group a{
+        width: 100%;
+    }
+}
