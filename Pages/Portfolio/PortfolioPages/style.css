@@ -23,7 +23,8 @@ header {
     text-decoration: none;
     transition: .5s;
 }
-.textLogo:hover{
+
+.textLogo:hover {
     font-size: 42px;
     transition: .5s;
 }
@@ -57,57 +58,73 @@ header {
     display: none;
 }
 
-.portfolioBlock{
+.portfolioBlock {
     padding: 0 350px 0 350px;
     display: flex;
     flex-direction: column;
     align-content: center;
 }
-.portfolioBlock h1{
+
+.portfolioBlock h1 {
     text-align: center;
     margin-top: 100px;
     color: #00B7FF;
 }
 
-.group{
+.portfolioBlock iframe {
     margin-top: 30px;
+    width: 100%;
+}
+
+.fotos {
+    margin-top: 15px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+
     gap: 15px;
 }
 
-.group a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    text-decoration: none;
-}
-
-.group a img{
-    width:50%;
+.fotos img {
+    width: 30%;
     border-radius: 5px;
-    transition: .3s;
 }
 
-.group a img:hover{
-    box-shadow: 0 0 5px 5px #D9D9D9;
-    transform: scale(1.05);
-    transition: .3s;
+.statusInProject {
+    margin-top: 15px;
+    text-align: center;
+
+    font-size: 28px;
+    color: #ffffff;
 }
 
-.group a h2{
-margin-top: 10px;
-color: #ffffff;
+.result {
+    margin-top: 10px;
+    text-align: center;
+
+    font-size: 18px;
+    color: #8fd4ff;
+}
+
+.description {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.timeDone {
+    text-align: right;
+    font-size: 24px;
+    font-weight: 900;
+    color: #ffffff;
 }
 
 @media only screen and (max-width: 1615px) {
     header {
         padding: 0 100px 0 100px;
     }
-    .portfolioBlock{
+
+    .portfolioBlock {
         padding: 0 100px 0 100px;
     }
 }
@@ -116,11 +133,9 @@ color: #ffffff;
     header {
         padding: 0 30px 0 30px;
     }
-    .portfolioBlock{
+
+    .portfolioBlock {
         padding: 0 30px 0 30px;
-    }
-    .group a{
-        width: 60%;
     }
 }
 
@@ -142,10 +157,6 @@ color: #ffffff;
 
     .links {
         display: none;
-    }
-
-    .group a{
-        height: 150px;
     }
 
     #burger-menu {
@@ -250,16 +261,20 @@ color: #ffffff;
         margin-bottom: 30px;
         text-decoration: none;
     }
-}
 
-@media only screen and (max-width: 425px) {
-    .group a{
-        width: 80%;
+    .fotos {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-}
 
-@media only screen and (max-width: 375px) {
-    .group a{
+    .fotos img {
         width: 100%;
     }
 }
+
+@media only screen and (max-width: 425px) {}
+
+@media only screen and (max-width: 375px) {}
